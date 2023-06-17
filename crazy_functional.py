@@ -229,6 +229,15 @@ def get_crazy_functions():
         }
     })
 
+    from crazy_functions.联网分析单个网页链接 import 总结单个链接的网页内容
+    function_plugins.update({
+        "总结单个链接的网页内容（先输入问题，再点击按钮，需要访问互联网）": {
+            "Color": "stop",
+            "AsButton": False,  # 加入下拉菜单中
+            "Function": HotReload(总结单个链接的网页内容)
+        }
+    })
+
     from crazy_functions.解析项目源代码 import 解析任意code项目
     function_plugins.update({
         "解析项目源代码（手动指定和筛选源代码文件类型）": {
